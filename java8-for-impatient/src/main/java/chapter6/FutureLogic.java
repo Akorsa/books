@@ -6,8 +6,6 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * How to use CompletableFuture class
- *
- * Created by artur on 09.12.15.
  */
 public class FutureLogic {
 
@@ -20,9 +18,9 @@ public class FutureLogic {
     ProcessingService processingService = new ProcessingService();
 
     CompletableFuture
-      .supplyAsync(dataService::getData)
-      .thenApply(processingService::process)
-      .thenAccept(System.out::println);
+        .supplyAsync(dataService::getData)
+        .thenApply(processingService::process)
+        .thenAccept(System.out::println);
   }
 
   static class DataService {

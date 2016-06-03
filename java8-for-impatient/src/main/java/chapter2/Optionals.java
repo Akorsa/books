@@ -5,7 +5,7 @@ import java.util.Optional;
 /**
  * Creating and consuming Optional values
  *
- * @author ahalikov
+ * @author akhalikov
  */
 public class Optionals {
 
@@ -14,9 +14,9 @@ public class Optionals {
     d.ifPresent(System.out::println);
 
     Optional.of(4.0)
-      .flatMap(Optionals::inverse)
-      .flatMap(Optionals::squareRoot)
-      .ifPresent(System.out::println);
+        .flatMap(Optionals::inverse)
+        .flatMap(Optionals::squareRoot)
+        .ifPresent(System.out::println);
   }
 
   public static Optional<Double> inverse(Double x) {

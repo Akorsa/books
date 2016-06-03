@@ -12,17 +12,15 @@ import java.util.stream.Stream;
  *
  * Constructor references are just like method references,
  * except that the name of the method is new.
- *
- * @author ahalikov
  */
 public class ConstructorReferences {
 
-    public static void main(String[] args) {
-    }
+  public static void main(String[] args) {
+  }
 
-    static void someUiToolkit() {
-        List<String> labels = Arrays.asList("Button 1", "Button 2", "Button 3");
-        Stream<Button> stream = labels.stream().map(Button::new);
-        List<Button> buttons = stream.collect(Collectors.toList());
-    }
+  static void someUiToolkit() {
+    List<String> labels = Arrays.asList("Button 1", "Button 2", "Button 3");
+    Stream<Button> stream = labels.stream().map(Button::new);
+    List<Button> buttons = stream.collect(Collectors.toList());
+  }
 }

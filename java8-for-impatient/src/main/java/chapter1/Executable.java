@@ -15,5 +15,5 @@ package chapter1;
  */
 @FunctionalInterface
 public interface Executable {
-    void execute();
+  void execute();
 }
